@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let data = snapshot.val();
         let memberList = data["groupMember"];
         console.log("success");
-      
+    
         // データを取得後にテーブルを生成する
         let initialData = memberList.map(name => ({ name, ratio: 1 }));
         generateTable(initialData);
@@ -112,4 +112,4 @@ document.addEventListener('DOMContentLoaded', function() {
 * LINE共有機能
   * 作った
   * Macでは動作しない．ipadは動作した
-  * とりあえず画像を適当に挿入した
+  * とりあえず画像を適当に挿入した．
