@@ -46,7 +46,7 @@
 }
 
 .p5Canvas{
-  max-width: 600px;
+  /* max-width: 600px; */
   width: 100% !important;
   height: auto !important;
 }
@@ -101,3 +101,7 @@
   position: relative;
   top: 50px;
 }
+
+/* #canvas{
+  transform: scale(2, 2);
+} */

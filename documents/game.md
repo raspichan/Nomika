@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let data = snapshot.val();
         let memberList = data["groupMember"];
         console.log("success");
-    
+  
         // データを取得後にテーブルを生成する
         let initialData = memberList.map(name => ({ name, ratio: 1 }));
         generateTable(initialData);
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 * roulette
   * memberListが反映できた．リロード時にsetup関数とdraw関数も実行させるようにしたら解決した
 
-# 12/25
+## 12/25
 
 * roulette
   * ルーレットのデザイン修正
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
   * 履歴が重複しないように変更した
 * リンクコピー機能を作った．iphone, Macの動作確認済
 
-# 12/26
+## 12/26
 
 * これからやりたい事
   * rouletteの色生成のアルゴリズム
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   * リンクコピー機能動作確認
   * LINEにリンクを共有する機能
 
-# 12/27
+## 12/27
 
 * paypay決済機能
   * 個人間送金のAPIは基本なさそうで，ヒットしたものも[クレカの登録が必要だし大変そう](https://zenn.dev/rinda_1994/articles/c5ca9955e53f86)なのでパス
@@ -113,3 +113,13 @@ document.addEventListener('DOMContentLoaded', function() {
   * 作った
   * Macでは動作しない．ipadは動作した
   * とりあえず画像を適当に挿入した．
+
+## 1/17
+* アイコン作成
+  * ファビコンとapple-touch-iconを設定した
+  * ファビコンはうまく反映されたが，後者は反映されない
+    * キャッシュが原因の可能性があるのでほっといたら反映されるようになるかもしれない
+* 話題
+  * 話題編集を隠せるようにした
+* ルーレット
+  * ちょっとだけ大きくした
