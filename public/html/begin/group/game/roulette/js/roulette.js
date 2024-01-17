@@ -148,36 +148,15 @@ window.setup=()=>{
     var canvas = createCanvas(600,400);
     canvas.parent('canvas');
     textSize(20);
-    // stroke(0,0,0);
-    // fill(0,0,0);
     background(255,255,255,0);
     recalculate();
     dataFetch();
 }
 
-// window.mousePressed=()=>{
-//     holding = true;
-    
-// }
-
-// window.mouseReleased=()=>{
-//     holding = false;
-
-// }
-
-// window.touchStarted=()=>{
-//     mousePressed();
-// }
-
-// window.touchEnded=()=>{
-//     mouseReleased();
-// }
-
 window.cssColorSet=()=>{
     console.log("cssColorSet");
     var counter = 0;
     $('.color-indicator').each(function(){
-        // push();
         colorMode(HSL, 255);
         var c = color(colorList[counter],255-COLOR_ADJ*colorList[counter],Lightness);
         pop();
@@ -236,11 +215,6 @@ window.validation=()=>{
             badflag = true;
         }
     });
-    // $('.ratio').each(function(){
-    //     if(!($(this).val()>0)){
-    //         badflag = true;
-    //     }
-    // });
     if(badflag){
         alert('項目名を正しく設定してください。');
         return 1;
@@ -297,8 +271,6 @@ window.drawRoulette=()=>{
 window.draw=()=>{
     fill(255,255,255,0);
     translate(width/2, height/2);
-
-    // fill(255,0,0);
     push();
     translate(0, -RADIUS-MARGIN);
     triangle(0, 0, -TRIANGLE_SIZE/2, -TRIANGLE_SIZE, TRIANGLE_SIZE/2, -TRIANGLE_SIZE);
@@ -366,7 +338,7 @@ window.draw=()=>{
 window.recalculate=()=>{
     var ratioSumJs = 0;
     $('.ratio').each(function(){
-        ratioSumJs += $(this).val()-0; //文字から数字の変換
+        ratioSumJs += $(this).val()-0;
     });
     $(".item").each(function(){
         var probability = ($(this).find(".ratio").first().val()-0) / ratioSumJs;
