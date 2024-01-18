@@ -112,9 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
 * LINE共有機能
   * 作った
   * Macでは動作しない．ipadは動作した
-  * とりあえず画像を適当に挿入した．
+  * とりあえず画像を適当に挿入した
 
 ## 1/17
+
 * アイコン作成
   * ファビコンとapple-touch-iconを設定した
   * ファビコンはうまく反映されたが，後者は反映されない
